@@ -1,0 +1,16 @@
+{
+  "name": "experiment-5-contact-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express and MongoDB contact API for Experiment 5",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "check": "node --check app.js && node --check config/dbConnection.js && node --check controllers/contactModel.js && node --check models/contactModel.js && node --check routes/contactRoutes.js"
+  },
+  "dependencies": {
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "mongoose": "8.24.2"
+  }
+}

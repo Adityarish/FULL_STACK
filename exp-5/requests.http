@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:5000/api/contacts
+
+### Create a contact (201). Copy the returned _id into @contactId below.
+# @name createContact
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "name": "Aditya Singh",
+    "email": "aditya@example.com",
+    "phone": "9876543210"
+}
+
+###
+@contactId = {{createContact.response.body._id}}
+
+### List all contacts (200)
+GET {{baseUrl}}
+
+### Get one contact (200)
+GET {{baseUrl}}/{{contactId}}
+
+### Update a contact (200)
+PUT {{baseUrl}}/{{contactId}}
+Content-Type: application/json
+
+{
+    "phone": "9123456780"
+}
+
+### Create with a missing field (400)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "name": "No Email"
+}
+
+### Get with an invalid id (400)
+GET {{baseUrl}}/abc
+
+### Delete a contact (200)
+DELETE {{baseUrl}}/{{contactId}}
+
+### Get after delete (404)
+GET {{baseUrl}}/{{contactId}}

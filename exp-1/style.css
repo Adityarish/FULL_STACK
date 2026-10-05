@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,50 @@
+@baseUrl = http://localhost:3000/api/tasks
+
+### Create a task (201)
+# @name createTask
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "title": "Finish lab report",
+    "description": "Write the Express and MongoDB section"
+}
+
+###
+@taskId = {{createTask.response.body._id}}
+
+### List all tasks (200)
+GET {{baseUrl}}
+
+### Update a task (200). status: Pending | In Progress | Completed
+PUT {{baseUrl}}/{{taskId}}
+Content-Type: application/json
+
+{
+    "status": "Completed"
+}
+
+### Update with an invalid status (400)
+PUT {{baseUrl}}/{{taskId}}
+Content-Type: application/json
+
+{
+    "status": "Done"
+}
+
+### Create with a missing description (400)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "title": "No description"
+}
+
+### Delete a task (204)
+DELETE {{baseUrl}}/{{taskId}}
+
+### Delete again (404)
+DELETE {{baseUrl}}/{{taskId}}
+
+### Unknown route (404)
+GET http://localhost:3000/api/unknown

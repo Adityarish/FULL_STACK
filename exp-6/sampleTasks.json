@@ -1,0 +1,12 @@
+[
+    { "title": "Finish lab report", "description": "Write the Express and MongoDB section", "status": "In Progress" },
+    { "title": "Buy groceries", "description": "Milk, eggs, bread and fruit", "status": "Pending" },
+    { "title": "Revise DBMS notes", "description": "Normalization and transactions chapters", "status": "Completed" },
+    { "title": "Submit assignment", "description": "Upload the web development assignment to the portal", "status": "Pending" },
+    { "title": "Fix login bug", "description": "Users are logged out after refreshing the page", "status": "In Progress" },
+    { "title": "Plan weekend trip", "description": "Book tickets and find a place to stay", "status": "Pending" },
+    { "title": "Team meeting", "description": "Discuss project milestones with the team", "status": "Completed" },
+    { "title": "Update resume", "description": "Add the latest projects and skills", "status": "Pending" },
+    { "title": "Practice DSA", "description": "Solve five array and string problems", "status": "In Progress" },
+    { "title": "Pay electricity bill", "description": "Due by the end of this week", "status": "Completed" }
+]
