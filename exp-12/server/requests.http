@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:5000
+
+GET {{baseUrl}}/
+
+###
+GET {{baseUrl}}/api/books
+
+###
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "isbn": "9780061122415",
+    "price": 399,
+    "stock": 5,
+    "description": "A fable about following a dream."
+}

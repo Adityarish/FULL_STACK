@@ -1,0 +1,68 @@
+RUN COMMANDS - EXPERIMENTS 7 TO 12
+=================================
+
+Use a separate Terminal window or tab for each running program.
+Keep the terminal open while using the program. Press Control+C to stop it.
+Dependencies are already installed. If node_modules is missing, run
+npm install inside the relevant folder before npm start.
+If a program is already running, use its URL or stop its existing terminal
+before starting another copy on the same port.
+
+EXPERIMENT 7 - Student Registration (Angular)
+
+cd /Users/adityasingh/FULL-STACK/exp-7
+npm start
+
+Browser: http://127.0.0.1:4207
+
+EXPERIMENT 8 - Movie Reviews (Angular)
+
+cd /Users/adityasingh/FULL-STACK/exp-8
+npm start
+
+Browser: http://127.0.0.1:4208
+
+EXPERIMENT 9 - Todo App (React)
+
+cd /Users/adityasingh/FULL-STACK/exp-9
+npm start
+
+Browser: http://127.0.0.1:5179
+
+EXPERIMENT 10 - Login and Signup Forms (React)
+
+cd /Users/adityasingh/FULL-STACK/exp-10
+npm start
+
+Browser: http://127.0.0.1:5180
+
+EXPERIMENT 11
+
+No Experiment 11 source was supplied, so no run command is available.
+
+EXPERIMENT 12 - Book Store (React + Express + MongoDB)
+
+Step 1: Start the installed MongoDB service:
+
+brew services start mongodb/brew/mongodb-community@8.0
+
+Open MongoDB Compass and connect using:
+mongodb://localhost:27017
+
+Database: BOOKSTORE-2026-27
+Compass is the database viewer; the MongoDB service must also be running.
+The server's .env file is already configured for this local database.
+
+Step 2: Start the backend in one terminal:
+
+cd /Users/adityasingh/FULL-STACK/exp-12/server
+npm start
+
+API: http://localhost:5000/api/books
+
+Step 3: Start the frontend in a NEW terminal:
+
+cd /Users/adityasingh/FULL-STACK/exp-12/client
+npm start
+
+Browser: http://127.0.0.1:5182

@@ -1,0 +1,36 @@
+.container {
+  width: 700px;
+  margin: 30px auto;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.review-title {
+  margin-top: 30px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "experiment-9-todo-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --port 5179",
+    "dev": "vite --host 127.0.0.1 --port 5179",
+    "build": "vite build",
+    "check": "vite build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {}
+}
